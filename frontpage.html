@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Management — Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .input { @apply w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-4 focus:ring-red-100 focus:border-red-500 transition; }
+    .label { @apply text-sm font-medium text-gray-700; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900">
+  <!-- Wrapper -->
+  <div class="relative">
+    <!-- Subtle background decoration -->
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div class="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-red-100 blur-3xl opacity-40"></div>
+      <div class="absolute -bottom-32 -left-24 h-72 w-72 rounded-full bg-rose-100 blur-3xl opacity-40"></div>
+    </div>
+
+    <!-- Content -->
+    <header class="max-w-7xl mx-auto px-6 pt-8">
+      <nav class="flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 grid place-items-center rounded-2xl bg-red-600 text-white font-extrabold">IM</div>
+          <span class="sr-only">Inventory Management</span>
+          <p class="hidden sm:block text-sm text-gray-500">Your unified inventory stack</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <a class="px-3 py-2 rounded-lg hover:bg-gray-100" href="#features">Features</a>
+          <a class="px-3 py-2 rounded-lg hover:bg-gray-100" href="#trust">Security</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+        <!-- Left: Hero / Copy -->
+        <section class="flex flex-col justify-center">
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+            Handle all your <span class="text-red-600">inventory</span> needs
+          </h1>
+          <p class="mt-4 text-lg text-gray-700">
+            Track stock in real-time, streamline sales, fulfill orders, and oversee warehouses from a single, beautiful dashboard.
+          </p>
+
+          <ul id="features" class="mt-6 space-y-3">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 text-red-600"><i class="fas fa-check-circle"></i></span>
+              <p><span class="font-semibold">Multi-warehouse:</span> centralize products, batches, and SKUs easily.</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 text-red-600"><i class="fas fa-shield-alt"></i></span>
+              <p><span class="font-semibold">Bank‑grade security:</span> encryption-at-rest and role-based access.</p>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 text-red-600"><i class="fas fa-bolt"></i></span>
+              <p><span class="font-semibold">Fast onboarding:</span> import via CSV or API in minutes.</p>
+            </li>
+          </ul>
+
+          <div id="trust" class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div class="rounded-2xl bg-white shadow-sm border p-4 text-center">
+              <p class="text-xs text-gray-500">Data Residency</p>
+              <p class="mt-1 font-semibold">India Region</p>
+            </div>
+            <div class="rounded-2xl bg-white shadow-sm border p-4 text-center">
+              <p class="text-xs text-gray-500">Uptime</p>
+              <p class="mt-1 font-semibold">99.9%</p>
+            </div>
+            <div class="rounded-2xl bg-white shadow-sm border p-4 text-center">
+              <p class="text-xs text-gray-500">Support</p>
+              <p class="mt-1 font-semibold">24×7 Chat</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: Card / Form -->
+        <section class="relative">
+          <div class="sticky top-6">
+            <div class="bg-white  border rounded-3xl shadow-xl p-6 sm:p-8">
+              <h2 class="text-xl font-semibold">Set up your organization right now</h2>
+              <p class="text-sm text-gray-500 mt-1">It takes less than a minute.</p>
+
+
+
+              <form >
+                <div class="mb-4">
+                    <input type="text" placeholder="Company Name" class=" bg-white    w-full p-3  border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Vendor Name" class="bg-white w-full p-3 border border-gray-300   rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email Address" class=" bg-white  w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="password" placeholder="Password" class="bg-white     w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+                
+                <div class="mb-4">
+                    <input type="text" placeholder="Madhya Pradesh" class="   bg-white  w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="+91 Phone number" class="bg-white w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="date" class=" bg-white w-full p-3 border border-gray-300 rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <select class= "   bg-white  p-3 border border-gray-300 rounded-lg">
+                        <option value="">Select Category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="mb-4 text-gray-600 text-sm">
+                    Your data will be in INDIA data center.
+                </div>
+                <div class="mb-4 flex items-center">
+                    <input type="checkbox" id="terms" class="mr-2">
+                    <label for="terms" class="text-gray-600 text-sm">I agree to the <a href="#" class="text-blue-600">Terms of Service</a> and <a href="#" class="text-blue-600">Privacy Policy</a></label>
+                </div>
+                
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- <form id="signupForm" class="mt-6 space-y-4" novalidate>
+                <!-- Company Name -->
+                <!-- <div>
+                  <label for="company" class="label">Company Name</label>
+                  <input id="company" name="company" type="text" class="input" placeholder="e.g., Acme Pvt Ltd" required />
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="company">Please enter your company name.</p>
+                </div> -->
+
+                <!-- Vendor Name -->
+                <!-- <div>
+                  <label for="vendor" class="label">Vendor Name</label>
+                  <input id="vendor" name="vendor" type="text" class="input" placeholder="e.g., Rakesh Kumar" required />
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="vendor">Please enter a vendor contact name.</p>
+                </div> -->
+
+                <!-- Email -->
+                <!-- <div>
+                  <label for="email" class="label">Email Address</label>
+                  <input id="email" name="email" type="email" class="input" placeholder="name@company.com" autocomplete="email" required />
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="email">Enter a valid email address.</p>
+                </div> --> -->
+
+                <!-- Password + Toggle + Strength -->
+                <!-- <div>
+                  <label for="password" class="label">Password</label>
+                  <div class="relative">
+                    <input id="password" name="password" type="password" class="input pr-12" minlength="8" placeholder="At least 8 characters" required />
+                    <button type="button" id="togglePw" class="absolute inset-y-0 right-3 my-auto h-8 w-8 grid place-items-center rounded-lg hover:bg-gray-100" aria-label="Toggle password visibility">
+                      <i class="far fa-eye"></i>
+                    </button>
+                  </div>
+                  <div class="mt-2 h-2 w-full bg-gray-200 rounded-full overflow-hidden">
+                    <div id="pwStrengthBar" class="h-2 w-0 bg-red-500 transition-all duration-300"></div>
+                  </div>
+                  <p id="pwHint" class="mt-1 text-xs text-gray-600">Use a mix of letters, numbers, and symbols.</p>
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="password">Password must be at least 8 characters.</p>
+                </div> -->
+
+                <!-- State -->
+                <!-- <div>
+                  <label for="state" class="label">State</label>
+                  <select id="state" name="state" class="input" required>
+                    <option value="">Select State</option>
+                    <option selected value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="state">Please select your state.</p>
+                </div> -->
+
+                <!-- Phone (India) -->
+                <!-- <div>
+                  <label for="phone" class="label">Phone Number</label>
+                  <div class="flex gap-2">
+                    <span class="inline-flex items-center px-3 rounded-xl border border-gray-300 bg-gray-50 text-gray-600">+91</span>
+                    <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="^(?:\+?91[-\s]?)?[6-9]\d{9}$" class="input" placeholder="9876543210" required />
+                  </div>
+                  <p class="mt-1 text-xs text-gray-500">Format: 10 digits starting with 6–9.</p>
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="phone">Enter a valid Indian mobile number.</p>
+                </div> -->
+
+                <!-- Date -->
+                <!-- <div>
+                  <label for="startDate" class="label">Organization Start Date</label>
+                  <input id="startDate" name="startDate" type="date" class="input" required />
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="startDate">Please pick a start date.</p>
+                </div>
+
+                Category -->
+                <!-- <div>
+                  <label for="category" class="label">Category</label>
+                  <select id="category" name="category" class="input" required>
+                    <option value="">Select Category</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <p class="mt-1 text-xs text-red-600 hidden" data-error-for="category">Please select a category.</p>
+                </div> -->
+
+                <!-- Data center note -->
+                <!-- <div class="text-gray-600 text-sm flex items-center gap-2">
+                  <span class="text-red-600"><i class="fas fa-database"></i></span>
+                  Your data will be in <span class="font-semibold">INDIA</span> data center.
+                </div>
+
+                <!-- Terms -->
+                <!-- <div class="flex items-start gap-3">
+                  <input type="checkbox" id="terms" class="mt-1 h-5 w-5 rounded border-gray-300" required />
+                  <label for="terms" class="text-sm text-gray-700">I agree to the <a href="#" class="text-red-600 hover:underline">Terms of Service</a> and <a href="#" class="text-red-600 hover:underline">Privacy Policy</a>.</label>
+                </div> --> -->
+
+                <!-- Submit -->
+                <button id="submitBtn" type="submit" class="w-full bg-red-600 text-white p-3 rounded-xl font-semibold disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                    <a href="deshbord.html" class="w-full bg-red-600 text-white p-3 rounded-lg font-semibold text-center block">
+                        CREATE YOUR FREE ACCOUNT
+                      </a>
+                      
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <p class="text-xs text-gray-500 text-center">By continuing, you consent to receive onboarding emails. You can opt out anytime.</p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 pb-12 text-xs text-gray-500">
+      © <span id="year"></span> Inventory Management. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 hidden">
+    <div class="bg-gray-900 text-white text-sm px-4 py-3 rounded-xl shadow-lg flex items-center gap-2">
+      <i class="fas fa-info-circle"></i>
+      <span id="toastMsg">Processing…</span>
+    </div>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Password toggle
+    const pw = document.getElementById('password');
+    const toggle = document.getElementById('togglePw');
+    toggle.addEventListener('click', () => {
+      pw.type = pw.type === 'password' ? 'text' : 'password';
+      toggle.innerHTML = pw.type === 'password' ? '<i class="far fa-eye"></i>' : '<i class="far fa-eye-slash"></i>';
+    });
+
+    // Password strength (very lightweight heuristic)
+    const pwBar = document.getElementById('pwStrengthBar');
+    const pwHint = document.getElementById('pwHint');
+    pw.addEventListener('input', () => {
+      const v = pw.value;
+      let score = 0;
+      if (v.length >= 8) score++;
+      if (/[A-Z]/.test(v)) score++;
+      if (/[a-z]/.test(v)) score++;
+      if (/[0-9]/.test(v)) score++;
+      if (/[^A-Za-z0-9]/.test(v)) score++;
+      const pct = Math.min(100, score * 20);
+      pwBar.style.width = pct + '%';
+      pwBar.className = 'h-2 transition-all duration-300 ' + (pct < 40 ? 'bg-red-500' : pct < 80 ? 'bg-yellow-500' : 'bg-green-500');
+      pwHint.textContent = pct < 80 ? 'Stronger passwords include upper, lower, numbers & symbols.' : 'Looking good!';
+    });
+
+    // Validation helpers
+    function showError(id, show) {
+      const el = document.querySelector(`[data-error-for="${id}"]`);
+      if (!el) return;
+      el.classList.toggle('hidden', !show);
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      t.classList.remove('hidden');
+      setTimeout(() => t.classList.add('hidden'), 2500);
+    }
+
+    // Form validation + fake redirect to deshbord.html when valid
+    const form = document.getElementById('signupForm');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const fields = ['company', 'vendor', 'email', 'password', 'state', 'phone', 'startDate', 'category'];
+      let valid = true;
+
+      fields.forEach((id) => {
+        const input = document.getElementById(id);
+        const isOk = input.checkValidity();
+        showError(id, !isOk);
+        if (!isOk) valid = false;
+      });
+
+      const terms = document.getElementById('terms');
+      if (!terms.checked) {
+        showToast('Please agree to the Terms & Privacy Policy.');
+        valid = false;
+      }
+
+      if (!valid) {
+        showToast('Please fix the highlighted fields.');
+        return;
+      }
+
+      // Simulate processing
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating account…';
+
+      setTimeout(() => {
+        showToast('Account created successfully! Redirecting…');
+        // Redirect to provided dashboard file
+        window.location.href = 'deshbord.html';
+      }, 1200);
+    });
+  </script>
+</body>
+</html>

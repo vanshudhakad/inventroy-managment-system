@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    
+
+
+
+    <div class="container"> 
+
+
+        <!-- Sidebar -->     
+
+        <aside class="sidebar">
+
+        
+            <div class="flex h-screen  ">
+                <!-- Sidebar -->     
+        
+        
+                <div class="bg-green-500 text-white w-64 p-4  ">
+        
+        
+                    <div class="p-2 text-1xl font-bold">Inventroy Management </div>
+        
+        
+                    <nav class="space-y-4    mt-5">
+                        <a href="deshbord.html" class=""><i class="fas fa-home"></i> Home</a>
+         <a href="income.html" class="flex items-center space-x-2">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Income</span>
+                        </a>
+                          
+                        <a href="banking.html" class="flex items-center space-x-2 ">
+                            <i class="fas fa-university"></i>
+                            <span>Banking</span>
+                        </a>
+                        <a href="accouting.html" class="flex items-center space-x-2">
+                            <i class="    fas fa-chart-line         "></i>
+                            <span>Accounting</span></a>
+        
+                            <a href="stock.html"  class="flex items-center space-x-2"><i class="fas fa-cogs"></i> <span>Manage Stock</span></a>
+                        </a>
+                        <a href="custmore.html" class="flex items-center space-x-2">
+                            <i class="   fas fa-users               "></i>
+                            <span>customers</span>
+                        </a>
+                        <a href="product.html" class="flex items-center space-x-2   bg-green-700 p-2 rounded      ">
+                            <i class="      fas fa-truck           "></i>
+                            <span>Products/Services</span>
+                        </a>
+                        <a href="report.html" class="flex items-center space-x-2">
+                            <i class="         fas fa-file-alt      "></i>
+                            <span>Reports</span>
+                        </a>
+        
+        
+        
+                        <a href="setting.html" class="flex items-center space-x-2">
+                            <i class="   fas fa-cog              "></i>
+                            <span>Setting</span>
+                        </a>
+                    </nav>
+                
+        
+        
+                    <div class="mt-8 bg-white text-green-600 p-4 rounded">
+                        <h2 class="text-lg font-bold">Billing & Upgrade</h2>
+                        <p>Renewal Date: 01 Jan 2024</p>
+                    </div>
+                </div>
+                
+        
+
+
+
+
+
+
+
+
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-semibold">Products / Services</h1>
+                <div class="flex space-x-2">
+                    <a href="newitem.html" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">+ New Item</a>
+                    <a href="import.html" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">Import</a>
+                </div>
+            </header>
+
+            <section class="bg-white p-6 rounded shadow">
+                <form id="product-form" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label for="product-name" class="block font-medium">Name</label>
+                        <input type="text" id="product-name" class="w-full p-2 border rounded" placeholder="Enter Product/Service">
+                    </div>
+                    <div>
+                        <label for="item-code" class="block font-medium">Item Code</label>
+                        <input type="text" id="item-code" class="w-full p-2 border rounded" placeholder="Enter Item Code">
+                    </div>
+                    <div>
+                        <label for="item-type" class="block font-medium">Type</label>
+                        <select id="item-type" class="w-full p-2 border rounded">
+                            <option value="">Select Type</option>
+                            <option value="product">Product</option>
+                            <option value="service">Service</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="category" class="block font-medium">Category</label>
+                        <select id="category" class="w-full p-2 border rounded">
+                            <option value="">Select Category</option>
+                            <option value="Syrup">Syrup</option>
+                            <option value="Tablet">Tablet</option>
+                        </select>
+                    </div>
+                    <div class="col-span-1 md:col-span-4 flex space-x-2 mt-4">
+                        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded">Search</button>
+                        <button type="reset" class="bg-gray-500 hover:bg-gray-700 text-white py-2 px-4 rounded">Clear</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="mt-8">
+                <table class="w-full border-collapse border border-gray-300">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="border p-3">Name</th>
+                            <th class="border p-3">Code</th>
+                            <th class="border p-3">Type</th>
+                            <th class="border p-3">Quantity</th>
+                            <th class="border p-3">Price (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list"></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('product-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('product-name').value;
+            const code = document.getElementById('item-code').value;
+            const type = document.getElementById('item-type').value;
+            const category = document.getElementById('category').value;
+            
+            const table = document.getElementById('product-list');
+            const row = `<tr>
+                            <td class='border p-3'>${name}</td>
+                            <td class='border p-3'>${code}</td>
+                            <td class='border p-3'>${type}</td>
+                            <td class='border p-3'>1</td>
+                            <td class='border p-3'>1000.00</td>
+                        </tr>`;
+            table.innerHTML += row;
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Stock - The Gadget Store</title>
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+
+
+    <div class="flex h-screen ">
+        <!-- Sidebar -->     
+
+
+        <div class="bg-green-500 text-white w-64 p-4  ">
+
+
+            <div class="p-2 text-1xl font-bold">Inventroy Management </div>
+
+
+            <nav class="space-y-4    mt-5">
+                <a href="deshbord.html" class=""><i class="fas fa-home"></i> Home</a>
+ <a href="income.html" class="flex items-center space-x-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income</span>
+                </a>
+                  
+                <a href="banking.html" class="flex items-center space-x-2  ">
+                    <i class="fas fa-university"></i>
+                    <span>Banking</span>
+                </a>
+                <a href="accouting.html" class="flex items-center space-x-2">
+                    <i class="    fas fa-chart-line         "></i>
+                    <span>Accounting</span></a>
+
+                    <a href="stock.html"  class="flex items-center space-x-2 bg-green-700 p-2 rounded     "><i class="fas fa-cogs"></i> <span>Manage Stock</span></a>
+                </a>
+                <a href="custmore.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-users               "></i>
+                    <span>customers</span>
+                </a>
+                <a href="product.html" class="flex items-center space-x-2">
+                    <i class="      fas fa-truck           "></i>
+                    <span>Products/Services</span>
+                </a>
+                <a href="report.html" class="flex items-center space-x-2">
+                    <i class="         fas fa-file-alt      "></i>
+                    <span>Reports</span>
+                </a>
+
+
+
+                <a href="setting.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-cog              "></i>
+                    <span>Setting</span>
+                </a>
+            </nav>
+        
+
+
+        <div class="mt-8 bg-white text-green-600 p-4 rounded">
+            <h2 class="text-lg font-bold">Billing & Upgrade</h2>
+            <p>Renewal Date: 01 Jan 2024</p>
+        </div>
+    </div>
+    
+
+
+
+
+               
+
+
+
+
+
+           
+        <!-- Main Content -->
+       
+
+
+
+
+
+
+
+
+        <div class="w-4/5 p-4">
+            <div class="flex justify-between items-center mb-4">
+             <div class="text-xl font-bold">
+              Manage Stock
+             </div>
+             <div class="flex items-center">
+        
+    
+                <div class="dropdown   p-2 ">
+                    <button class="btn btn-Primary  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      New            </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Update</a></li>
+                      <li><a class="dropdown-item" href="#">unpaid payment</a></li>
+                      <li><a class="dropdown-item" href="#">paid payment</a></li>
+                    </ul>
+                  </div>
+        
+
+              <div class="text-gray-700">
+        
+        
+        
+        
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                  </svg> 
+        
+        
+        
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">User</a></li>
+                      <li><a class="dropdown-item" href="#">Add Account</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+        </div>
+        </div>
+        
+        </div>
+        
+
+
+            <div class="bg-white p-4 rounded shadow">
+                <div class="flex space-x-4 mb-4">
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Issued for Production</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Received for Sales</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Stock Transferred</button>
+                    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">Stock Wastage</button>
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Search" class="border border-gray-300 p-2 rounded w-full">
+                </div>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="border-b p-2">Voucher number</th>
+                            <th class="border-b p-2">Voucher date</th>
+                            <th class="border-b p-2">Warehouse</th>
+                            <th class="border-b p-2">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1412336672</td>
+                            <td class="border-b p-2">2014-10-14</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1407234633</td>
+                            <td class="border-b p-2">2014-08-05</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1407113423</td>
+                            <td class="border-b p-2">2014-08-04</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1406111329</td>
+                            <td class="border-b p-2">2014-07-23</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1406111322</td>
+                            <td class="border-b p-2">2014-09-09</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1406111321</td>
+                            <td class="border-b p-2">2014-08-06</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">STK/BLUE/1406111317</td>
+                            <td class="border-b p-2">2014-08-11</td>
+                            <td class="border-b p-2">Main Warehouse</td>
+                            <td class="border-b p-2">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

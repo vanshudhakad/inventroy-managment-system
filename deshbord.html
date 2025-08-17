@@ -1,0 +1,390 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+     Dashboard
+    </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+
+
+
+
+
+    <div class="flex h-screen   ">
+        <!-- Sidebar -->
+
+
+        <div class="bg-green-500 text-white w-64 p-4  ">
+
+
+            <div class="p-2 text-1xl font-bold">Inventroy Management</div>
+
+
+            <nav class="space-y-4    mt-5">
+                <a href="deshbord.html" class="   flex items-center space-x-2    bg-green-700 p-2 rounded            "><i class="fas fa-home"></i> Home</a>
+                <a href="income.html" class="flex items-center space-x-2         ">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income</span>
+                </a>
+
+                <a href="banking.html" class="flex items-center space-x-2 ">
+                    <i class="fas fa-university"></i>
+                    <span>Banking</span>
+                </a>
+                <a href="accouting.html" class="flex items-center space-x-2">
+                    <i class="    fas fa-chart-line         "></i>
+                    <span>Accounting</span></a>
+
+                <a href="stock.html" class="flex items-center space-x-2"><i class="fas fa-cogs"></i> <span>Manage
+                        Stock</span></a>
+                </a>
+                <a href="custmore.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-users               "></i>
+                    <span>customers</span>
+                </a>
+                <a href="product.html" class="flex items-center space-x-2">
+                    <i class="      fas fa-truck           "></i>
+                    <span>Products/Services</span>
+                </a>
+                <a href="report.html" class="flex items-center space-x-2">
+                    <i class="         fas fa-file-alt      "></i>
+                    <span>Reports</span>
+                </a>
+
+
+
+                <a href="setting.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-cog              "></i>
+                    <span>Setting</span>
+                </a>
+            </nav>
+        
+
+        <div class="mt-8 bg-white text-green-600 p-4 rounded">
+            <h2 class="text-lg font-bold">Billing & Upgrade</h2>
+            <p>Renewal Date: 01 Jan 2024</p>
+        </div>
+    </div>
+    
+
+
+
+
+        <!-- Main Content -->
+
+        
+
+
+        <div class="w-4/5 p-4">
+            <div class="flex justify-between items-center mb-4">
+             <div class="text-xl font-bold">
+              Home
+             </div>
+             <div class="flex items-center">
+        
+    
+                <div class="dropdown   p-2 ">
+                    <button class="btn btn-Primary  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      New            </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Update</a></li>
+                      <li><a class="dropdown-item" href="#">unpaid payment</a></li>
+                      <li><a class="dropdown-item" href="#">paid payment</a></li>
+                    </ul>
+                  </div>
+        
+
+              <div class="text-gray-700">
+        
+        
+        
+        
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                  </svg> 
+        
+        
+        
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">User</a></li>
+                      <li><a class="dropdown-item" href="#">Add Account</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+        </div>
+        </div>
+        
+        </div>
+        
+        
+
+
+
+        <div class="flex-1 p-6">
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="flex items-center">
+                        <img alt="Icon representing total vendors" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/cLTGMjtwWfSaI65IEosekrAIoojOqlgpg46iUicaO0M6yd9TA.jpg"
+                            width="50" />
+                        <div>
+                            <p class="text-xl font-bold">
+                                66
+                            </p>
+                            <p>
+                                Total Vendors
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="flex items-center">
+                        <img alt="Icon representing total categories" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/RqBs2NupxGqNBlvZkIH2ChPJn9b1uRWt0iPb8fs74E3i5ueTA.jpg"
+                            width="50" />
+                        <div>
+                            <p class="text-xl font-bold">
+                                47
+                            </p>
+                            <p>
+                                Total Categories
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="flex items-center">
+                        <img alt="Icon representing total products" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/m9SoVdfBquw4d6yeoyf2KWxzfYI9Ets3pyzi8u4rmSEkL31PB.jpg"
+                            width="50" />
+                        <div>
+                            <p class="text-xl font-bold">
+                                225
+                            </p>
+                            <p>
+                                Total Products
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="flex items-center">
+                        <img alt="Icon representing total sales" class="mr-4" height="50"
+                            src="https://storage.googleapis.com/a1aa/image/qwGe245fAQvbx0zXqAMRj6fRPPgqwK9SOjOlkSJIqnT8l76nA.jpg"
+                            width="50" />
+                        <div>
+                            <p class="text-xl font-bold">
+                                232
+                            </p>
+                            <p>
+                                Total Sales
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-white p-6 ">
+
+
+        
+                    Sales Report
+                </h2>
+                <img alt="Bar chart showing sales report" height="300"
+                    src="https://storage.googleapis.com/a1aa/image/QhuSrtVTAX5gAVJ5xfZ64lhzKrcwHUSkhViR4mEDtTci5ueTA.jpg"
+                    width="600" />
+            </div>
+
+
+
+            <div class="grid grid-row-2 gap-4 mb-6">
+                <div class="bg-white p-6 ">
+                    <h2 class="text-xl font-bold mb-4">
+                        Product Details
+                    </h2>
+                    <img alt="Pie chart showing product details" height="300"
+                        src="https://storage.googleapis.com/a1aa/image/YksF2VpebxwyUK5g2dhLNCUcsEGPHEA7QAefUfCwCnZAM31PB.jpg"
+                        width="300" />
+                </div>
+                </div>
+
+
+
+
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Top Row -->
+                    <div class="col-span-2 bg-white p-6 rounded-lg shadow">
+
+    <h2 class="text-xl font-bold mb-4">
+                        
+                        Category Wise Sales (%)
+                    </h2>
+                    <img alt="Pie chart showing category wise sales" height="300"
+                        src="https://storage.googleapis.com/a1aa/image/5kdPwX8bckqcOZ5F9Icwo7HFxZTadF8QeB39bPRruzNh5ueTA.jpg"
+                        width="300" />
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="bg-white p-6 rounded shadow mb-6">
+                <h2 class="   text-xl font-bold mb-4">
+                    Purchase Details
+                </h2>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="border-b p-2">
+                                Vendor
+                            </th>
+                            <th class="border-b p-2">
+                                Category
+                            </th>
+                            <th class="border-b p-2">
+                                Product
+                            </th>
+                            <th class="border-b p-2">
+                                Quantity
+                            </th>
+                            <th class="border-b p-2">
+                                Purchase Rate
+                            </th>
+                            <th class="border-b p-2">
+                                Sales Rate
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border-b p-2">
+                                Vendor 1
+                            </td>
+                            <td class="border-b p-2">
+                                Category 1
+                            </td>
+                            <td class="border-b p-2">
+                                Product 1
+                            </td>
+                            <td class="border-b p-2">
+                                5
+                            </td>
+                            <td class="border-b p-2">
+                                $10
+                            </td>
+                            <td class="border-b p-2">
+                                $15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">
+                                Vendor 2
+                            </td>
+                            <td class="border-b p-2">
+                                Category 2
+                            </td>
+                            <td class="border-b p-2">
+                                Product 2
+                            </td>
+                            <td class="border-b p-2">
+                                10
+                            </td>
+                            <td class="border-b p-2">
+                                $20
+                            </td>
+                            <td class="border-b p-2">
+                                $25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">
+                                Vendor 3
+                            </td>
+                            <td class="border-b p-2">
+                                Category 3
+                            </td>
+                            <td class="border-b p-2">
+                                Product 3
+                            </td>
+                            <td class="border-b p-2">
+                                15
+                            </td>
+                            <td class="border-b p-2">
+                                $30
+                            </td>
+                            <td class="border-b p-2">
+                                $35
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">
+                                Vendor 4
+                            </td>
+                            <td class="border-b p-2">
+                                Category 4
+                            </td>
+                            <td class="border-b p-2">
+                                Product 4
+                            </td>
+                            <td class="border-b p-2">
+                                20
+                            </td>
+                            <td class="border-b p-2">
+                                $40
+                            </td>
+                            <td class="border-b p-2">
+                                $45
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-b p-2">
+                                Vendor 5
+                            </td>
+                            <td class="border-b p-2">
+                                Category 5
+                            </td>
+                            <td class="border-b p-2">
+                                Product 5
+                            </td>
+                            <td class="border-b p-2">
+                                25
+                            </td>
+                            <td class="border-b p-2">
+                                $50
+                            </td>
+                            <td class="border-b p-2">
+                                $55
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+</body>
+
+</html>

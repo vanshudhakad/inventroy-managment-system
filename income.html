@@ -1,0 +1,403 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Excel Trading Dashboard
+  </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  
+    
+
+
+    <div class="flex ">
+        <!-- Sidebar -->     
+
+
+        <div class="bg-green-500 text-white w-64 p-4  ">
+
+
+            <div class="p-2 text-1xl font-bold">Inventroy Management </div>
+
+
+            <nav class="space-y-4    mt-5">
+                <a href="deshbord.html" class=""><i class="fas fa-home"></i> Home</a>
+ <a href="income.html" class="flex items-center space-x-2  bg-green-700 p-2 rounded ">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income</span>
+                </a>
+                  
+                <a href="banking.html" class="flex items-center space-x-2 ">
+                    <i class="fas fa-university"></i>
+                    <span>Banking</span>
+                </a>
+                <a href="accouting.html" class="flex items-center space-x-2">
+                    <i class="    fas fa-chart-line         "></i>
+                    <span>Accounting</span></a>
+
+                    <a href="stock.html"  class="flex items-center space-x-2"><i class="fas fa-cogs"></i> <span>Manage Stock</span></a>
+                </a>
+                <a href="custmore.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-users               "></i>
+                    <span>customers</span>
+                </a>
+                <a href="product.html" class="flex items-center space-x-2">
+                    <i class="      fas fa-truck           "></i>
+                    <span>Products/Services</span>
+                </a>
+                <a href="report.html" class="flex items-center space-x-2">
+                    <i class="         fas fa-file-alt      "></i>
+                    <span>Reports</span>
+                </a>
+
+
+
+                <a href="setting.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-cog              "></i>
+                    <span>Setting</span>
+                </a>
+            </nav>
+        
+
+    <div class="mt-6 p-4 bg-white text-black rounded">
+     <button class="bg-gray-200 text-black py-2 px-4 rounded">
+      Billing &amp; Upgrade
+     </button>
+     <div class="text-sm mt-2">
+      Renewal Date: 30 Nov 2023
+     </div>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="w-4/5 p-4">
+    <div class="flex justify-between items-center mb-4">
+     <div class="text-xl font-bold">
+      Income And Expense Overview
+     </div>
+     <div class="flex items-center">
+
+
+
+
+
+
+        <div class="dropdown   p-2 ">
+            <button class="btn btn-Primary  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              New            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Update</a></li>
+              <li><a class="dropdown-item" href="#">unpaid payment</a></li>
+              <li><a class="dropdown-item" href="#">paid payment</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+
+      <div class="text-gray-700">
+
+
+
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+ <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+          </svg> 
+
+
+
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">User</a></li>
+              <li><a class="dropdown-item" href="#">Add Account</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+          </svg> -->
+
+    
+      </div>
+     </div>
+    </div>
+    <div class="flex mb-4">
+     <div class="w-2/3 bg-white p-4 rounded shadow">
+      <div class="flex justify-between items-center mb-4">
+       <div class="text-gray-700">
+        This Month
+       </div>
+       <div class="text-gray-700">
+        Last 6 Months
+       </div>
+       <div class="text-gray-700">
+        Financial Year
+       </div>
+      </div>
+      <img alt="Bar chart showing income and expenses over several months" height="300" src="https://storage.googleapis.com/a1aa/image/EFGsaJ7h6dYmExVp6EUXmb3kmNnbfIvo3CQTzUWKJhZAQteTA.jpg" width="600"/>
+     </div>
+     <div class="w-1/3 bg-white p-4 rounded shadow ml-4">
+      <div class="text-xl font-bold mb-4">
+       Cash And Bank Balance
+      </div>
+      <table class="w-full text-left">
+       <thead>
+        <tr>
+         <th class="border-b-2 border-gray-200 py-2">
+          Account
+         </th>
+         <th class="border-b-2 border-gray-200 py-2">
+          Value(INR)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="py-2">
+          Ajay
+         </td>
+         <td class="py-2">
+          -159758.00
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          HDFC
+         </td>
+         <td class="py-2">
+          9183.30
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          AUB BANK
+         </td>
+         <td class="py-2">
+          344306.00
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Bank Of Baroda
+         </td>
+         <td class="py-2">
+          360453.00
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Bank Of Tanzania
+         </td>
+         <td class="py-2">
+          25177.44
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Cash In Hand
+         </td>
+         <td class="py-2">
+          260453.00
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Citi Bank
+         </td>
+         <td class="py-2">
+          -204543.30
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Ajay Sharma
+         </td>
+         <td class="py-2">
+          1000.00
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2">
+          Dishane
+         </td>
+         <td class="py-2">
+          1000.00
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="flex">
+     <div class="w-1/2 bg-white p-4 rounded shadow mr-4">
+      <div class="text-xl font-bold mb-4">
+       Invoices By Status
+      </div>
+      <img alt="Pie chart showing invoices by status" height="300" src="https://storage.googleapis.com/a1aa/image/kgrsj98YnCIpDZakSQSXZOnGiFR8hA9C2Cr8fon2NrIBQteTA.jpg" width="300"/>
+     </div>
+     <div class="w-1/2">
+      <div class="bg-white p-4 rounded shadow mb-4">
+       <div class="text-xl font-bold mb-4">
+        Top 5 Unpaid Invoices
+       </div>
+       <table class="w-full text-left">
+        <thead>
+         <tr>
+          <th class="border-b-2 border-gray-200 py-2">
+           Customer
+          </th>
+          <th class="border-b-2 border-gray-200 py-2">
+           Value
+          </th>
+          <th class="border-b-2 border-gray-200 py-2">
+           Overdue
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="py-2">
+           AIR
+          </td>
+          <td class="py-2">
+           INR 60,021,001
+          </td>
+          <td class="py-2">
+           2 Months
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           JUMRAU ENTERPRISE
+          </td>
+          <td class="py-2">
+           INR 3,256,000
+          </td>
+          <td class="py-2">
+           3 Months
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           Krishna Sales
+          </td>
+          <td class="py-2">
+           INR 2,200,000
+          </td>
+          <td class="py-2">
+           About 2 Years
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           Ajay Chauhan
+          </td>
+          <td class="py-2">
+           INR 1,776,000
+          </td>
+          <td class="py-2">
+           Over 1 Year
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+       <div class="text-xl font-bold mb-4">
+        Top 5 Payables
+       </div>
+       <table class="w-full text-left">
+        <thead>
+         <tr>
+          <th class="border-b-2 border-gray-200 py-2">
+           Vendor
+          </th>
+          <th class="border-b-2 border-gray-200 py-2">
+           Value
+          </th>
+          <th class="border-b-2 border-gray-200 py-2">
+           Overdue
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="py-2">
+           Ajay Sharma
+          </td>
+          <td class="py-2">
+           INR 1,600,400
+          </td>
+          <td class="py-2">
+           Over 1 Year
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           Ajay Sharma
+          </td>
+          <td class="py-2">
+           INR 1,200,000
+          </td>
+          <td class="py-2">
+           Almost 2 Years
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           Abc William
+          </td>
+          <td class="py-2">
+           INR 1,000,000
+          </td>
+          <td class="py-2">
+           Over 1 Year
+          </td>
+         </tr>
+         <tr>
+          <td class="py-2">
+           Abc123
+          </td>
+          <td class="py-2">
+           INR 1,000,000
+          </td>
+          <td class="py-2">
+           Over 1 Year
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

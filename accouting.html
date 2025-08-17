@@ -1,0 +1,351 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Dashboard
+    </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs. cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+    
+                
+                    
+                
+
+    <div class=" flex  ">
+        <!-- Sidebar -->     
+
+
+        <div class="bg-green-500 text-white w-64 p-4  ">
+
+
+            <div class="p-2 text-1xl font-bold">Inventroy Management </div>
+
+
+            <nav class="space-y-4    mt-5">
+                <a href="deshbord.html" class=""><i class="fas fa-home"></i> Home</a>
+ <a href="income.html" class="flex items-center space-x-2">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income</span>
+                </a>
+                  
+                <a href="banking.html" class="flex items-center space-x-2 ">
+                    <i class="fas fa-university"></i>
+                    <span>Banking</span>
+                </a>
+                <a href="accouting.html" class="flex items-center space-x-2  flex bg-green-700 p-2 rounded        ">
+                    <i class="    fas fa-chart-line         "></i>
+                    <span>Accounting</span></a>
+
+                    <a href="stock.html"  class="flex items-center space-x-2"><i class="fas fa-cogs"></i> <span>Manage Stock</span></a>
+                </a>
+                <a href="custmore.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-users               "></i>
+                    <span>customers</span>
+                </a>
+                <a href="product.html" class="flex items-center space-x-2">
+                    <i class="      fas fa-truck           "></i>
+                    <span>Products/Services</span>
+                </a>
+                <a href="report.html" class="flex items-center space-x-2">
+                    <i class="         fas fa-file-alt      "></i>
+                    <span>Reports</span>
+                </a>
+
+
+
+                <a href="setting.html" class="flex items-center space-x-2">
+                    <i class="   fas fa-cog              "></i>
+                    <span>Setting</span>
+                </a>
+            </nav>
+        
+
+            <div class="mt-8 bg-white text-green-600 p-4 rounded">
+                <h2 class="text-lg font-bold">Billing & Upgrade</h2>
+                <p>Renewal Date: 01 Jan 2024</p>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+        <div class="w-4/5 p-4">
+            <div class="flex justify-between items-center mb-4">
+             <div class="text-xl font-bold">
+              Accounting
+             </div>
+             <div class="flex items-center">
+        
+    
+                <div class="dropdown   p-2 ">
+                    <button class="btn btn-Primary  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      New            </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Update</a></li>
+                      <li><a class="dropdown-item" href="#">unpaid payment</a></li>
+                      <li><a class="dropdown-item" href="#">paid payment</a></li>
+                    </ul>
+                  </div>
+        
+
+              <div class="text-gray-700">
+        
+        
+        
+        
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                  </svg> 
+        
+        
+        
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">User</a></li>
+                      <li><a class="dropdown-item" href="#">Add Account</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+        </div>
+        </div>
+        
+        </div>
+        
+
+        
+
+
+
+
+
+
+
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Top Row -->
+                <div class="col-span-2 bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-4">
+                        Total Sales &amp; Costs
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-3xl font-bold text-purple-600">
+                                $256.82K
+                            </p>
+                            <p class="text-green-500">
+                                +9.2%
+                            </p>
+                        </div>
+                        <img alt="Graph showing sales and costs over time" height="100"
+                            src="https://storage.googleapis.com/a1aa/image/SYj7QFdSLcoTMJOvdBF5mQAfbTGeeUe86kFWysbg7zL1tw1PB.jpg"
+                            width="200" />
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-4">
+                        All Warehouses
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">
+                                5,623
+                            </p>
+                            <p class="text-gray-500">
+                                products
+                            </p>
+                        </div>
+                        <img alt="Pie chart showing product distribution" height="100"
+                            src="https://storage.googleapis.com/a1aa/image/vIT61Wwrh3J4M9Zcf2H9Kd1GE0BkgiKR9pkN5LQ8Kd6sFueTA.jpg"
+                            width="100" />
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-4">
+                        Total Orders
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-1xl font-bold">
+                                49,238
+                            </p>
+                            <p class="text-gray-500">
+                                orders
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="bg-white p-2 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-2">
+                        Total Revenue
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-1xl font-bold text-green-200">
+                                $298.56K
+                            </p>
+                            <p class="text-green-500">
+                                +8.5%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-2 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-2">
+                        Total Profit
+                    </h2>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-1xl font-bold text-green-200">
+                                $89.39K
+                            </p>
+                            <p class="text-green-500">
+                                +5.6%
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                
+            
+                
+
+                       
+                                    
+
+                    <!-- <div class="container overflow-hidden">
+                        <div class="row gx-5">
+                          <div class="col"> -->
+                           <!-- <div class="p-3 border bg-light"> -->
+
+
+                            
+                            
+                                <div class="grid grid-cols-2 gap-6">
+                                    <!-- Top Row -->
+                                    <div class="col-span-2 bg-white p-6 rounded-lg ">
+
+                    <div class="  p-6  ">
+                                <h2 class="text-lg font-semibold mb-4">
+                                    Top 5 countries by customers
+                                </h2>
+                                <img alt="World map showing top 5 countries by customers" height="1000"
+                                    src="https://storage.googleapis.com/a1aa/image/TbzV3vcnJjqyHFTHa3soMZTm7Gx1g9Eae3g9sBvTV5ntFueTA.jpg"
+                                    width="600" />
+                            </div>
+                            
+
+
+                           </div>
+                          </div>
+                          <!-- <div class="col">
+                            <div class="p-3 border bg-light"> -->
+
+
+
+
+
+
+                                <div class=" bg-white p-6 rounded-lg shadow">
+                                    <h2 class="text-lg font-semibold mb-4">
+                                        Top Sales Channel Summary
+                                    </h2>
+                                    <div class="space-y-4">
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center space-x-2">
+                                                <i class="fab fa-amazon text-yellow-500">
+                                                </i>
+                                                <span>
+                                                    Amazon
+                                                </span>
+                                            </div>
+                                            <div class="w-1/2 bg-gray-200 rounded-full h-4">
+                                                <div class="bg-yellow-500 h-4 rounded-full" style="width: 58.23%">
+                                                </div>
+                                            </div>
+                                            <span>
+                                                58.23%
+                                            </span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center space-x-2">
+                                                <i class="fab fa-ebay text-green-500">
+                                                </i>
+                                                <span>
+                                                    eBay
+                                                </span>
+                                            </div>
+                                            <div class="w-1/2 bg-gray-200 rounded-full h-4">
+                                                <div class="bg-green-500 h-4 rounded-full" style="width: 27.56%">
+                                                </div>
+                                            </div>
+                                            <span>
+                                                27.56%
+                                            </span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center space-x-2">
+                                                <i class="fas fa-store text-blue-500">
+                                                </i>
+                                                <span>
+                                                    Walmart
+                                                </span>
+                                            </div>
+                                            <div class="w-1/2 bg-gray-200 rounded-full h-4">
+                                                <div class="bg-blue-500 h-4 rounded-full" style="width: 15.92%">
+                                                </div>
+                                            </div>
+                                            <span>
+                                                15.92%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>      
+
+
+
+
+
+                
+                    
+                                    
+</body>
+
+</html>
